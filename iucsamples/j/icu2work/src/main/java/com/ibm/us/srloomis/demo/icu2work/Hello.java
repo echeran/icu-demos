@@ -16,8 +16,8 @@ public class Hello
 {
     public static void main( String[] args )
     {
-        //Locale locale = Locale.getDefault();
-        Locale locale = Locale.forLanguageTag("es");
+        Locale locale = Locale.getDefault();
+//        Locale locale = Locale.forLanguageTag("es");
         String world = LocaleDisplayNames
                 .getInstance(ULocale.forLocale(locale))
                 .regionDisplayName("001");

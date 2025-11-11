@@ -19,7 +19,7 @@ public class BadMessage {
             MessageFormat m = new MessageFormat(popmsg, locale);
             Map msgArgs = new HashMap<String,Object>();
             msgArgs.put("territory", entry.territoryName());
-            msgArgs.put("population", entry.population());
+            msgArgs.put("population", new Double(entry.population()));
             System.out.println(m.format(msgArgs));
         }
     }
