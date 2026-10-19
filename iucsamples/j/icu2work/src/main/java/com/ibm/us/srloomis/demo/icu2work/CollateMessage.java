@@ -12,7 +12,7 @@ import java.util.*;
 public class CollateMessage {
     public static void main(String args[]) {
         final Locale locale = Locale.getDefault();
-        ResourceBundle rb = ResourceBundle.getBundle(GoodMessage.class.getName());
+        ResourceBundle rb = ResourceBundle.getBundle(BetterMessage.class.getName());
         String popmsg = rb.getString("population");
         System.out.println("Message: " + popmsg);
 
