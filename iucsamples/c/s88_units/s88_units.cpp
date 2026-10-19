@@ -30,7 +30,7 @@ icu::UnicodeString run(const char16_t* pattern, double quantity) {
 
 int main() {
   const char16_t* pattern1 = u"The room measures "
-    "{0, plural, one{1 meter} other{# meters}}"
+    "{0, plural, one{# meter} other{# meters}}"
     " wide.";
   const char16_t* pattern2 = u"The room measures "
     "{0, number, ::measure-unit/length-meter unit-width-full-name}"
